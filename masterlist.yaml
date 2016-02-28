@@ -10215,6 +10215,7 @@ plugins:
     after:
       - 'Clothing & Clutter Fixes.esp'
       - 'Complete Crafting Overhaul_Remade.esp'
+      - 'Disparity.esp'
       - 'Radiant and Unique Potions Poisons and Booze.esp'
   - name: 'Crafting 300 Basic.esp'
     tag:
