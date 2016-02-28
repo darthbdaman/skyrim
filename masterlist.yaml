@@ -1834,6 +1834,12 @@ plugins:
       - crc: 0xb22ed6c8
         util: *dirtyUtil
         itm: 9
+  - name: 'RelightingSkyrim_Legendary.esp'
+    priority: 960000
+  - name: 'ELE_Legendary_Lite.esp'
+    priority: 970000
+  - name: 'ELE_Legendary_Fs_Wt_Lite.esp'
+    priority: 970000
 # ## RelightingSkyrim.esp
 # ## Load order from author of RS
   - name: 'OLSE for Dawnguard.esp'
@@ -2446,6 +2452,12 @@ plugins:
   - name: 'Weapons & Armor Fixes_Dragonborn.esp'
     tag:
       - Stats
+  - name: 'Weapons & Armor_TrueWeaponsLvlLists.esp'
+    priority: 890000
+  - name: 'Complete Crafting_TrueWeaponsLvlLists.esp'
+    priority: 890000
+    after:
+      - 'Weapons & Armor_TrueWeaponsLvlLists.esp'
 # ## TAG: {{BASH: NpcFaces}}
 # ## Aelafacelift.esp
 # ## moved from companions, face change only
@@ -2703,6 +2715,7 @@ plugins:
 # ## suggested to load before ADS
   - name: 'AOS.esp'
     after:
+      - 'ADS.esp'
       - 'WetandCold.esp'
       - name: 'RealisticWaterTwo.esp'
         condition: 'not file("AOS2_RealisticWaterTwo Patch.esp") and not regex("WAO-.*RWT.*\.esp")'
@@ -17001,6 +17014,7 @@ plugins:
   - name: 'Book Covers Skyrim.esp'
     after:
       - 'BetterQuestObjectives.esp'
+      - 'TheChoiceIsYours.esp'
   - name: 'Book Covers Dawnguard.esp'
     msg:
       - type: warn
@@ -27129,6 +27143,22 @@ plugins:
     priority: 1980000
   - name: 'STEP Combined PluginHF.esp'
     priority: 1980000
+  - name: 'Vividian - Weather Patch Vanilla.esp'
+    priority: 900000
+  - name: 'Vividian - Extended Weathers.esp'
+    after:
+      - 'Vividian - Weather Patch Vanilla.esp'
+  - name: 'Vividian - Extended Weathers - CoT.esp'
+    after:
+      - 'Vividian - Extended Weathers.esp'
+  - name: 'Vividian - Weather Patch CoT - ESS + SS -AOS.esp'
+    priority: 900000
+    after:
+      - 'Vividian - Extended Weathers - CoT.esp'
+      - 'Vividian - Extended Weathers.esp'
+      - 'Vividian - Weather Patch Vanilla.esp'
+  - name: 'DynDOLOD.esp'
+    priority: 1992000
   - name: 'World_Map_Height_Pitch_Tweak(_(130|170|200|250|Vanilla_pitch))?(_50|_90)?\.esp'
     url: [ 'http://www.nexusmods.com/skyrim/mods/26998' ]
     priority: 1990000
