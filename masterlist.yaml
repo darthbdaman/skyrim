@@ -10203,6 +10203,19 @@ plugins:
       - 'Skyrim Immersive Creatures.esp'
       - 'Skyrim Immersive Creatures - DLC2.esp'
       - 'Complete Crafting Overhaul_Remade.esp'
+  - name: 'Complete Alchemy & Cooking Overhaul.esp'
+	inc:
+      - 'Paralyze.esp'
+      - '83Willows_101BUGS_V4_HighRes.esp'
+      - '83Willows_101BUGS_V4_HighRes_HighSpawn.esp'
+      - '83Willows_101BUGS_V4_LowRes.esp'
+      - '83Willows_101BUGS_V4_LowerRes_HighSpawn.esp'
+      - 'ClamsDropPearls.esp'
+      - 'HarvestOverhaul.esp'
+    after:
+      - 'Clothing & Clutter Fixes.esp'
+      - 'Complete Crafting Overhaul_Remade.esp'
+      - 'Radiant and Unique Potions Poisons and Booze.esp'
   - name: 'Crafting 300 Basic.esp'
     tag:
       - Delev
