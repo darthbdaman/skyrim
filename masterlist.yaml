@@ -10204,7 +10204,7 @@ plugins:
       - 'Skyrim Immersive Creatures - DLC2.esp'
       - 'Complete Crafting Overhaul_Remade.esp'
   - name: 'Complete Alchemy & Cooking Overhaul.esp'
-	inc:
+    inc:
       - 'Paralyze.esp'
       - '83Willows_101BUGS_V4_HighRes.esp'
       - '83Willows_101BUGS_V4_HighRes_HighSpawn.esp'
